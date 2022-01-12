@@ -4,6 +4,7 @@
 <head>
     <title>Trung's Web</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet " href="style.css"/>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
     <a href="#"><img src="https://i.pinimg.com/originals/45/66/33/456633c1987702a7fefd5c08097aa8ef.jpg"
             alt="This is description" width="50" height="100"></a>
 
-    <div>
+    <div class="hobby">
         <p>
             My hobby:
         </p>
@@ -62,13 +63,23 @@
     <div>
         <p>Introduce yourself: </p>
         <form action="https://www.freecatphotoapp.com/submit-cat-photo">
-            <input type="text" required  placeholder="Your Name">
+            <input type="text" required placeholder="Your Name">
             <button type="submit">Submit</button>
         </form>
     </div>
-    <label for="Information">
-        <input type="radio" id="Information">Information    
-    </label>
+    <br>
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" readonly value="hello"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+      </form>
+
+    <form>
+        <input type="radio" name="id">new
+        <input type="radio" name="id">old
+    </form>
     <footer>@Copyright Nguyen Trung</footer>
 </body>
 
