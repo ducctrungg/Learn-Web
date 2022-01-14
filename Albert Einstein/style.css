@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: rgb(220,220,230);
+    color: #333;
+}
+
+img{
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+h1{
+    font-weight: lighter;
+    font-size: 36px;
+    color: #337ab7;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-style: italic;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    color: green;
+}
+
+.thumbnail p{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.mid h3{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+ul{
+    margin-left: 60px;
+}
+
+li{
+    font-size: 14px;
+    line-height: 1.4;
+    position: relative;
+}
+
+.information{
+    margin-top: 0px;
+}
+
+.mid--quotes p{
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+p.albert{
+    margin-top: 13px;
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+cite{
+    margin-left: 20px;
+    color: purple;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+a{
+    color: rgba(0, 0, 197, 0.6);
+    text-decoration: none;
+}
+a:hover{
+    color: rgba(0, 0, 197, 1);
+    text-decoration: underline;
+}
+
+.container{
+    margin-bottom: 10px;
+}
