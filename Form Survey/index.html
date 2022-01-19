@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>FORM SURVEY</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>application for permission to date my daughter</h1>
+                <p><strong>Note: </strong>From is to be completed at least 21 days prior to date</p>
+            </div>
+            <div class="card-personal">
+                <form action="#">
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <div>
+                            <label for="Name">Name:</label>
+                            <input type="text" id="Name" name="Name" placeholder="Enter name here"> <br><br>
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address" placeholder="Enter address here"> <br><br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter email here"> <br><br>
+                            <label for="phone_number">Phone Number:</label>
+                            <input type="number" name="phone_number" id="phone_number"
+                                placeholder="Enter 10 digit number"><br><br>
+                            <label for="iq">IQ:</label>
+                            <input type="number" name="iq" id="iq" placeholder="Enter IQ here"><br><br>
+                        </div>
+                        <div>
+                            <p>Gender</p>
+                            <input type="radio" name="gender" id="male" value="Male">
+                            <label for="male">Male</label> <br>
+                            <input type="radio" name="gender" id="female" value="Female">
+                            <label for="female">Female</label> <br>
+                            <input type="radio" name="gender" id="other" value="Other">
+                            <label for="other">Other</label> <br><br>
+                        </div>
+                        <div>
+                            <label for="date">Date of Proposed Outing</label>
+                            <input type="date" name="date" id="date">
+                        </div>
+                    </fieldset>
+
+                </form>
+
+            </div>
+            <div class="card-checkbox">
+                <p>Check all that apply</p>
+                <div>
+                    <form action="#">
+                        <input type="checkbox" name="check_apply" id="tatoos" value="tatoos/piercings">
+                        <label for="tatoos">I have tatoos and/or piercings</label><br>
+                        <input type="checkbox" name="check_apply" id="older" value="2_years_older">
+                        <label for="older">I am more than 2 years older than my daughter</label><br>
+                        <input type="checkbox" name="check_apply" id="own_van" value="own_van">
+                        <label for="own_van">I own a panel van or V8 ute</label><br>
+                        <input type="checkbox" name="check_apply" id="full_time" value="full_time">
+                        <label for="full_time">I work full time</label><br>
+                        <input type="checkbox" name="check_apply" id="parents_rich" value="parents_rich">
+                        <label for="parents_rich">My parents are rich</label><br>
+                        <input type="checkbox" name="check_apply" id="date_well_lit" value="date_well_lit">
+                        <label for="date_well_lit">Is a date at a well lit public location</label><br>
+                    </form>
+                </div>
+            </div>
+            <div class="card-scroll">
+                <form action="#">
+                    <label for="political">Political Persuasion</label>
+                    <select name="policical_persuasion" id="political">
+                        <option value="Left Wing">Left Wing</option>
+                        <option value="Right Wing">Right Wing</option>
+                        <option value="Conservative">Conservative</option>
+                        <option value="Nazi">Nazi</option>
+                    </select>
+                    <label for="education">Education Level Completed</label>
+                    <select name="education" id="education">
+                        <option value="University">University</option>
+                        <option value="College">College</option>
+                        <option value="High_School">High School</option>
+                        <option value="None">None</option>
+                    </select>
+                </form>
+            </div>
+            <div class="card-essay">
+                <fieldset>
+                    <legend>Essay Section</legend>
+                    <div>
+                        <p>In 50 words or more explain why you want to date my daughter</p>
+                        <textarea name="explain" id="explain" cols="30" rows="10"
+                            placeholder="Enter Text Here"></textarea>
+                    </div>
+                    <div>
+                        <p>Please upload contact details for 2 references</p>
+                        <textarea name="contact_details" id="contact_details" cols="30" rows="10"
+                            placeholder="Enter Text Here"></textarea>
+                    </div>
+                    <div>
+                        <label for="files">Upload Police Clearance Certificate, Bank Statement and Medical Certifiates
+                            here:</label>
+                        <input type="file" name="files" id="files">
+                    </div>
+                </fieldset>
+            </div>
+            <footer>
+                <form action="#">
+                    <input type="submit" value="Enter Your Application">
+                </form>
+                
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
