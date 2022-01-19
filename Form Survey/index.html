@@ -20,7 +20,7 @@
             <div class="card-personal">
                 <form action="#">
                     <fieldset>
-                        <legend>Personal Details</legend>
+                        <legend><strong>Personal Details</strong></legend>
                         <div>
                             <label for="Name">Name:</label>
                             <input type="text" id="Name" name="Name" placeholder="Enter name here"> <br><br>
@@ -35,7 +35,7 @@
                             <input type="number" name="iq" id="iq" placeholder="Enter IQ here"><br><br>
                         </div>
                         <div>
-                            <p>Gender</p>
+                            <p id="gender">Gender</p> <br>
                             <input type="radio" name="gender" id="male" value="Male">
                             <label for="male">Male</label> <br>
                             <input type="radio" name="gender" id="female" value="Female">
@@ -53,7 +53,7 @@
 
             </div>
             <div class="card-checkbox">
-                <p>Check all that apply</p>
+                <p>Check all that apply</p> <br>
                 <div>
                     <form action="#">
                         <input type="checkbox" name="check_apply" id="tatoos" value="tatoos/piercings">
@@ -61,12 +61,12 @@
                         <input type="checkbox" name="check_apply" id="older" value="2_years_older">
                         <label for="older">I am more than 2 years older than my daughter</label><br>
                         <input type="checkbox" name="check_apply" id="own_van" value="own_van">
-                        <label for="own_van">I own a panel van or V8 ute</label><br>
-                        <input type="checkbox" name="check_apply" id="full_time" value="full_time">
+                        <label for="own_van">I own a panel van or V8 ute</label><br> 
+                        <input type="checkbox" name="check_apply" id="full_time" value="full_time" checked>
                         <label for="full_time">I work full time</label><br>
-                        <input type="checkbox" name="check_apply" id="parents_rich" value="parents_rich">
+                        <input type="checkbox" name="check_apply" id="parents_rich" value="parents_rich" checked>
                         <label for="parents_rich">My parents are rich</label><br>
-                        <input type="checkbox" name="check_apply" id="date_well_lit" value="date_well_lit">
+                        <input type="checkbox" name="check_apply" id="date_well_lit" value="date_well_lit" checked>
                         <label for="date_well_lit">Is a date at a well lit public location</label><br>
                     </form>
                 </div>
@@ -91,15 +91,16 @@
             </div>
             <div class="card-essay">
                 <fieldset>
-                    <legend>Essay Section</legend>
-                    <div>
-                        <p>In 50 words or more explain why you want to date my daughter</p>
-                        <textarea name="explain" id="explain" cols="30" rows="10"
+                    <legend><strong>Essay Section</strong></legend>
+                    <div> 
+                        <p>In 50 words or more explain why you want to date my daughter</p> <br>
+                        <textarea name="explain" id="explain" cols="50" rows="5"
                             placeholder="Enter Text Here"></textarea>
                     </div>
+                    <br>
                     <div>
-                        <p>Please upload contact details for 2 references</p>
-                        <textarea name="contact_details" id="contact_details" cols="30" rows="10"
+                        <p>Please upload contact details for 2 references</p> <br>
+                        <textarea name="contact_details" id="contact_details" cols="50" rows="5"
                             placeholder="Enter Text Here"></textarea>
                     </div>
                     <div>
@@ -111,7 +112,7 @@
             </div>
             <footer>
                 <form action="#">
-                    <input type="submit" value="Enter Your Application">
+                    <input type="submit" value="Send Your Application">
                 </form>
                 
             </footer>
