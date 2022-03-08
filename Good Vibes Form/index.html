@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src=""></script>
+    <title>GOOD VIBES FORM</title>
+</head>
+
+<body>
+    <h1>Good Vibes Form</h1>
+    <div class="card">
+        <p id="card-header">Tell us something positive that happened to you today.</p>
+        <div class="card-form">
+            <form action="#">
+                <div class="card-form-text">
+                    <div class="name">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name"> <br>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email address"> <br>
+                    </div>
+                    <div class="rating">
+                        <label for="rating">On a scale of 1-10, how good was it?</label>
+                        <input type="number" name="rating" id="rating" placeholder="Enter a number between 1 and 10">
+                    </div>
+                </div>
+                <div class="card-form-select">
+                    <label for="place">Where did it happen?</label>
+                    <select name="place" id="place">
+                        <option value="at home">At home</option>
+                        <option value="on my computer">On my computer</option>
+                        <option value="at work">At work</option>
+                        <option value="on the street">On the street</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="card-form-radio">
+                    <p>At what time of day did it happen?</p>
+                    <input type="radio" name="time_day" id="morning" value="morning">
+                    <label for="morning">Morning</label> <br>
+                    <input type="radio" name="time_day" id="afternoon" value="afternoon">
+                    <label for="afternoon">Afternoon</label> <br>
+                    <input type="radio" name="time_day" id="evening" value="evening">
+                    <label for="evening">Evening</label> <br>
+                </div>
+                <div class="card-form-checkbox">
+                    <p>What emotions did you experience?<br>(Select all that apply)</p>
+                    <input type="checkbox" name="emotions" id="excited" value="excited">
+                    <label for="excited">Excited</label> <br>
+                    <input type="checkbox" name="emotions" id="humbled" value="humbled">
+                    <label for="humbled">Humbled</label> <br>
+                    <input type="checkbox" name="emotions" id="elated" value="elated">
+                    <label for="elated">Elated</label> <br>
+                    <input type="checkbox" name="emotions" id="loved" value="loved">
+                    <label for="loved">Loved</label> <br>
+                    <input type="checkbox" name="emotions" id="enthusiastic" value="enthusisastic">
+                    <label for="enthusiastic">Enthusiastic</label> <br>
+                </div>
+                <div class="card-form-textarea">
+                    <textarea name="experience" id="experience" cols="30" rows="3"
+                        placeholder="Enter your experience here"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

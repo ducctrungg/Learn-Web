@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;   
+}
+
+body{
+    background-color:  #a9d7e9;
+    text-align: center;
+}
+
+h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.card{
+    background-color: #f3f3f3;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid #f3f3f3;
+}
+
+#card-header{
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+input[type = text], input[type = email], input[type = number], select, textarea{
+    padding: 6.5px 4px;
+    border-radius: 4px;
+    border: 0.5px solid rgba(128, 128, 128, 0.5);
+    margin-bottom: 5px;
+    margin-left: 15px
+}
+
+.name, .email, .rating{
+    display: block;
+    margin: auto;
+    position: relative;
+    left: 20px;
+}
+
+.rating label{
+    text-align: right;
+    display: inline-block;
+    width: 40%;
+}
+
+#rating{
+    vertical-align: baseline;
+}
