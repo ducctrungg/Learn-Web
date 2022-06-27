@@ -236,12 +236,30 @@ class Dog extends animal
   }
 }
 
-let spot = new Dog('spot')
-spot.speak()
+// let spot = new Dog('spot')
+// spot.speak()
 
-spot = new animal('spot')
-spot.speak()
+// spot = new animal('spot')
+// spot.speak()
 
-let btn = document.getElementById("btn")
+// let btn = document.getElementById("btn")
 
-btn.onclick = () => btn.innerHTML += 1
+// btn.onclick = () => btn.innerHTML += 1
+
+/*
+let change = [1,2,3,6,9,8,7,4]
+const perma = [1,2,3,6,9,8,7,4]
+let btn = document.getElementById('btns')
+console.log(btn)
+
+btn.onclick = function(){
+  change.unshift(change.pop())
+  for(let i = 0; i <= 7; i++)
+  {
+    document.getElementById('btn' + perma[i]).innerHTML = change[i];
+  }
+}
+*/
+
+let vari = document.getElementById("test")
+vari.innerText = "2";

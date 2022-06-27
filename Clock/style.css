@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background: rgb(198,253,255);
+    background: linear-gradient(to right, rgba(198,253,255,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.clock{
+    width: 300px;
+    height: 300px;
+    background-color: #e9eded;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: relative;
+    
+}
+
+.number{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transform: rotate(var(--rotatedeg));
+}
+
+.number1{
+    --rotatedeg: 30deg;
+}
+
+.number2{
+    --rotatedeg: 60deg;
+}
+
+.number3{
+    --rotatedeg: 90deg;
+}
+
+.number4{
+    --rotatedeg: 120deg;
+}
+
+.number5{
+    --rotatedeg: 150deg;
+}
+
+.number6{
+    --rotatedeg: 180deg;
+}
+
+.number7{
+    --rotatedeg: 210deg;
+}
+
+.number8{
+    --rotatedeg: 240deg;
+}
+
+.number9{
+    --rotatedeg: 270deg;
+}
+
+.number10{
+    --rotatedeg: 300deg;
+}
+
+.number11{
+    --rotatedeg: 330deg;
+}
+
+.number12{
+    --rotatedeg: 360deg;
+}
+
+.hand{
+    position: absolute;
+    background-color: red;
+    height: 5px;
+    width: 100%;
+    top: 50%;
+
+}
+
+.hand .hour{
+    
+}
