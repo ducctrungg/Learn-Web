@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js"></script>   
+    <title>Landing Page</title>
+</head>
+
+<body>
+
+    <div class="circle">
+    </div>
+    <header>
+        <img class="logo" src="images/logo.png" alt="Logo Starbuck">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>  
+    </header>
+
+    <div class="content">
+        <div class="title"> 
+            <h1>It's not just Coffee</h1>
+            <h1>It's <span>Starbucks</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem cupiditate eligendi, soluta
+                perferendis, natus nisi doloremque recusandae optio aliquam deserunt, velit praesentium sapiente
+                quisquam aut! Dolorem explicabo iure dolorum!</p>
+            <button>LEARN MORE</button>
+        </div>
+        <div class="imgBox">
+            <img src="images/img1.png" alt="Starbuck Water" class="starbuck">
+        </div>
+        <div class="imgLogo">
+            <img src="images/facebook.png" alt="facebook" id="facebook">
+            <img src="images/instagram.png" alt="instagram" id="instagram">
+            <img src="images/twitter.png" alt="twitter" id="twitter">
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="foot-img">
+        <img src="images/thumb1.png" alt="picture3" onclick="imgSlider('images/img1.png');changeColorCircle('#017143')">
+        <img src="images/thumb2.png" alt="picture2" onclick="imgSlider('images/img2.png');changeColorCircle('#eb7495')">
+        <img src="images/thumb3.png" alt="picture3" onclick="imgSlider('images/img3.png');changeColorCircle('#d752b1')">
+    </div>
+</footer>
+</html>

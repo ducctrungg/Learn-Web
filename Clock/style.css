@@ -8,17 +8,21 @@
 body{
     background: rgb(198,253,255);
     background: linear-gradient(to right, rgba(198,253,255,1) 0%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .clock{
     width: 300px;
-    height: 300px;
+    height: 300px; 
     background-color: #e9eded;
-    margin: auto;
     border-radius: 50%;
     border: 2px solid black;
     position: relative;
-    
+    opacity: 0.8;
 }
 
 .number{
@@ -26,6 +30,7 @@ body{
     text-align: center;
     width: 100%;
     height: 100%;
+    font-size: 1.3em;
     transform: rotate(var(--rotatedeg));
 }
 
@@ -73,19 +78,54 @@ body{
     --rotatedeg: 330deg;
 }
 
-.number12{
-    --rotatedeg: 360deg;
-}
 
 .hand{
+    --rotatedeg: 90;
     position: absolute;
     background-color: red;
-    height: 5px;
-    width: 100%;
-    top: 50%;
-
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(calc(var(--rotatedeg) * 1deg));
+    transform-origin: bottom;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 10;
 }
 
-.hand .hour{
-    
+.hand.hour{
+    --rotatedeg: 0;
+    width: 6px;
+    height: 25%;
+    background-color: black;
+    transform: translateX(-50%) rotate(calc(var(--rotatedeg) * 1deg));
+}
+
+.hand.minute{
+    --rotatedeg: 45;
+    width: 4px;
+    height: 35%;
+    background-color: black;
+    transform: translateX(-50%) rotate(calc(var(--rotatedeg) * 1deg));
+}
+
+.hand.second{
+    --rotatedeg: 90;
+    width: 1.5px;
+    height: 45%;
+    background-color: red;
+    transform: translateX(-50%) rotate(calc(var(--rotatedeg) * 1deg));
+}
+
+.clock::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
 }
