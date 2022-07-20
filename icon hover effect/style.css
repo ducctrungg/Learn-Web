@@ -1,0 +1,111 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+    --instagram: #C13584;
+    --facebook: #4267B2;
+    --twitter: #1DA1F2;
+    --whatsapp: #25D366;
+}
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box{
+    position: relative;
+    width: 2rem;
+    height: 2.5rem;
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+    transform: scale(1.5);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.text{
+    display: none;
+    font-size: 10px;
+}
+
+.icon{
+    padding: 6px 8px 3px 8px;
+    border-radius: 7px;
+    margin-right: 8px;
+}
+
+.icon i{
+    filter: invert(100%);
+}
+
+.whatsapp{
+    background-color: var(--whatsapp);
+}
+
+.insta{
+    background-color: var(--instagram);
+}
+
+.face{
+    background-color: var(--facebook);
+}
+
+.twitter{
+    background-color: var(--twitter);
+}
+
+.box:hover > .icon{
+    background-color: white;
+    margin: 4px;
+}
+
+.box:hover i{
+    filter: invert(0%);
+}
+
+.box:hover{
+    transform: translateX(40%) scale(1.5);
+    width: 6rem;
+    border-radius: 8px;
+}
+
+.box:nth-child(1):hover{
+    background-color: var(--instagram);
+    box-shadow: 0px 0px 30px rgba(193, 53, 132, 0.3);
+}
+
+.box:nth-child(2):hover{
+    background-color: var(--facebook);
+    box-shadow: 0px 0px 30px rgba(66, 103, 178, 0.3);
+}
+
+.box:nth-child(3):hover{
+    box-shadow: 0px 0px 30px rgba(29, 161, 242, 0.3);
+    background-color: var(--twitter);
+}
+
+.box:nth-child(4):hover{
+    box-shadow: 0px 0px 30px rgba(37, 211, 102, 0.3);
+    background-color: var(--whatsapp);
+}
+
+
+.box:hover p{
+    display: flex;
+    color: white;
+}
+
